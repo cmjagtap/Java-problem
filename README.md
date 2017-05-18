@@ -13,7 +13,7 @@
 
 - ##### Compiling Files:
 	
- 	java program_name.java
+ 	javac program_name.java
 
 
 - ##### Running Files:
