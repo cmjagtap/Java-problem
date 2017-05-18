@@ -11,7 +11,13 @@
 
 #### BUILDING AND EXECUTING:
 
-- ##### working :
+- ##### Compiling Files:
 	
-	I have created README.md for every folder and it 
-	contains how to executes them.
+ 	java program_name.java
+
+
+- ##### Running Files:
+	
+	Run compile file as follows
+	
+	java program_name
