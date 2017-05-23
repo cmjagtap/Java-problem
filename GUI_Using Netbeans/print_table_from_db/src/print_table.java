@@ -114,7 +114,7 @@ public static DefaultTableModel buildTableModel(ResultSet rs)
             String []columnNames11 = new String[200];
             String tableName = showt.getText();
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM "+tableName);
             ResultSetMetaData rsmd = rs.getMetaData();

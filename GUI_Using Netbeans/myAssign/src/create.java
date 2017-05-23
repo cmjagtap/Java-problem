@@ -276,7 +276,7 @@ public class create extends javax.swing.JFrame {
     try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = (Statement) c.createStatement();
              String sql= "Create table " + tname.getText() + "(" + tf1.getText() +" " +jc1.getSelectedItem() + 
                          " primary key NOT NULL," + tf2.getText() + " " + jc2.getSelectedItem() + "," + 

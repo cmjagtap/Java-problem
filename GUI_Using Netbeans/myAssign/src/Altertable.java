@@ -210,7 +210,7 @@ public class Altertable extends javax.swing.JFrame {
         try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = (Statement) c.createStatement();
             String sql= "ALTER TABLE " + tablen.getText() + " ADD " + col.getText() + " "+jc1.getSelectedItem() +";";
             stmt.executeUpdate(sql);
@@ -235,7 +235,7 @@ public class Altertable extends javax.swing.JFrame {
         try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = (Statement) c.createStatement();
             String sql= "ALTER TABLE " + drop.getText() + " Drop " + coln.getText() +";";
             System.out.println(sql);
@@ -261,7 +261,7 @@ public class Altertable extends javax.swing.JFrame {
         try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = (Statement) c.createStatement();
             String sql= "ALTER TABLE " + tbn.getText() + " ALTER COLUMN " + tbc.getText() +" TYPE "+ jc2.getSelectedItem()+";";
             System.out.println(sql);

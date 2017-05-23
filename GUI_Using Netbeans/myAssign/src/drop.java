@@ -113,7 +113,7 @@ public class drop extends javax.swing.JFrame {
         try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = (Statement) c.createStatement();
             String sql= "drop table " +drop.getText();
             stmt.executeUpdate(sql);

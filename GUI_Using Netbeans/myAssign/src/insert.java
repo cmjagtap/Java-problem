@@ -155,7 +155,7 @@ public class insert extends javax.swing.JFrame {
     try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             stmt = (Statement) c.createStatement();
              String sql= "Insert into " + "online_item_details" + " values(" + "'" +id.getText() +"','"+ descrption.getText() +"','" 
                             + model.getText() +"','" + size.getText() +"','" + price.getText() +"');";

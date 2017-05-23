@@ -128,7 +128,7 @@ public class welcome extends javax.swing.JFrame {
         try
         {
             Class.forName("org.postgresql.Driver");
-            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "postgres","hacker11");
+            c=DriverManager.getConnection("jdbc:postgresql://localhost:5432/cm_db", "user","passwd");
             String m="Database connect succefull"; 
             JOptionPane.showMessageDialog(this,m);
             c.close();
